@@ -14,30 +14,46 @@
     <h4>Seller</h4>
     <hr/>
     <dl class="row">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BirthDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.BaseSalary)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.BaseSalary)
-        </dd>
+        <div class="col-md-6">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+        </div> 
+        
+        <div class="col-md-6">
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+        </div>
+  
+        <div class="col-md-6">
+            <dt>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BirthDate)
+            </dd>
+
+        </div>
+
+         <div class="col-md-6">
+            <dt>
+                @Html.DisplayNameFor(model => model.BaseSalary)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.BaseSalary)
+            </dd>
+
+        </div>
+
     </dl>
 
     <form asp-action="Delete">
